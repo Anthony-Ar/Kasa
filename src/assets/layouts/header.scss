@@ -1,0 +1,39 @@
+@use '../utils/variables' as v;
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem auto!important;
+
+    nav {
+        a {
+            margin-left: 3rem;
+            color: v.$firstColor;
+            font-size: 24px;
+            text-decoration: none;
+
+            &.active {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    header {
+        margin: 1rem auto!important;
+
+        img {
+            width: 100px;
+        }
+
+        nav {
+            a {
+                margin-left: .5rem;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

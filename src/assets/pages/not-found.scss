@@ -1,0 +1,46 @@
+@use '../utils/variables' as v;
+
+#not-found {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .title {
+        margin-bottom: 4rem;
+        font-size: 288px;
+        font-weight: 700;
+        color: v.$firstColor;
+    }
+
+    .subtitle {
+        margin-bottom: 11rem;
+        text-align: center;
+        font-size: 36px;
+        color: v.$firstColor;
+    }
+
+    a {
+        font-size: 18px;
+        color: v.$firstColor;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #not-found {
+        .title {
+            margin-bottom: 1rem;
+            font-size: 96px;
+        }
+
+        .subtitle {
+            margin-bottom: 7rem;
+            font-size: 18px;
+        }
+
+        a {
+            font-size: 14px;
+        }
+    }
+}

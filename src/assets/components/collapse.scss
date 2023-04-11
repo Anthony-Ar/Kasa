@@ -1,0 +1,63 @@
+@use '../utils/variables' as v;
+
+.collapse {
+    border-radius: 5px;
+    width: 100%;
+    max-width: 1024px;
+    margin: 2rem auto;
+    background: #F7F7F7;
+
+    &.close {
+        background: transparent;
+    }
+
+    .collapse-title {
+        width: 100%;
+        background: v.$firstColor;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        font-size: 24px;
+
+        h2 {
+            margin: 0;
+            padding: .5rem 1rem;
+            font-weight: 500;
+            font-size: 24px;
+        }
+
+        svg {
+            padding: .5rem 1rem;
+        }
+    }
+
+    .collapse-content {
+        padding: 1.5rem;
+        font-size: 24px;
+        color: v.$firstColor;
+
+        &.close {
+            display: none;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .collapse {
+        margin: 1.2rem auto;
+
+        .collapse-title {
+            font-size: 13px;
+
+            h2 {
+                font-size: 13px;
+            }
+        }
+
+        .collapse-content {
+            font-size: 12px;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    color: white;
+    font-size: 80px;
+    width: 90%;
+    max-width: 1240px;
+    
+    .arrow-left {
+        margin-left: 1rem;
+        cursor: pointer;
+    }
+
+    .arrow-right {
+        margin-right: 1rem;
+        cursor: pointer;
+    }
+}
+
+p.slide-count {
+    display: flex;
+    align-self: flex-end;
+    position: absolute;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    color: white;
+}
+
+@media all and (max-width: 768px) {
+    .arrow {
+        font-size: 22px;
+    }
+
+    p.slide-count {
+        display: none;
+    }
+}
